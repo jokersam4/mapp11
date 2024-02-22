@@ -1,0 +1,371 @@
+@import url(https://fonts.googleapis.com/css?family=Jost:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap");
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Titillium Web", sans-serif;
+}
+
+:root {
+	--mainColor: #ffffff;
+	--mainColorLight: #ffffff;
+	--secondaryColor: rgb(255, 64, 0);
+	--textColor: #000000;
+  
+}
+.category{
+  width: 100%; /* Equivalent to w-full */
+  margin-top: 1rem; /* Equivalent to my-4 (assuming the default font size is 16px) */
+  margin-bottom: 1rem; /* Equivalent to my-4 (assuming the default font size is 16px) */
+  padding-left: 1.5rem; /* Equivalent to px-6 (assuming the default font size is 16px) */
+  padding-right: 1.5rem; /* Equivalent to px-6 (assuming the default font size is 16px) */
+  padding-top: 1rem; /* Equivalent to py-4 (assuming the default font size is 16px) */
+  padding-bottom: 1rem; /* Equivalent to py-4 (assuming the default font size is 16px) */
+  display: flex; /* Equivalent to flex */
+  align-items: center; /* Equivalent to items-center */
+justify-content: center;
+
+
+  gap: 2.5rem; /* Equivalent to mx-4 (assuming the default font size is 16px) */
+
+}
+header{
+  width: 100%;
+}
+.contact{background-color: #FEEBC8; /* Equivalent to bg-orange-200 */
+  padding: 1rem; /* Equivalent to p-4 */
+  border-radius: 0.5rem; /* Equivalent to rounded-lg */
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* Equivalent to shadow-lg */
+  text-align: center; /* Equivalent to text-center */
+  z-index: 5;}
+  @media only screen and (max-width: 422px) {
+.category{
+  flex-direction: column;
+}
+  }
+header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 80px;
+	padding: 0 2rem;
+	background-color: var(--mainColor);
+	color: var(--textColor);
+  z-index: 16;
+}
+header nav{
+  display: flex;
+	align-items: center;
+	justify-content: space-between;
+  width: 100%;
+  z-index: 15;
+}
+
+nav a {
+	margin: 0 1rem;
+	color: var(--textColor);
+	text-decoration: none;
+}
+
+nav a:hover {
+	color: var(--secondaryColor);
+}
+
+header .nav-btn {
+	padding: 5px;
+	cursor: pointer;
+	background: transparent;
+	border: none;
+	outline: none;
+	color: var(--textColor);
+	visibility: hidden;
+	opacity: 0;
+	font-size: 1.8rem;
+}
+
+header div,
+nav {
+	display: flex;
+	align-items: center;
+}
+.premiuma{
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  cursor: pointer;
+  gap: 2px; 
+  position: relative;
+}
+.headerul{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 7px;
+}
+
+@media only screen and (max-width: 1024px) {
+	header .nav-btn {
+		visibility: visible;
+		opacity: 1;
+	}
+  .premiuma{
+   margin-left: auto;
+   margin-right: auto;
+  }
+
+	header nav {
+		position: fixed;
+		top: -100vh;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 1.5rem;
+		background-color: var(--mainColor);
+		transition: 1s;
+	}
+.headerul{
+  display: flex;
+  flex-direction: column;
+  height: 50%;
+  justify-content: space-around;
+}
+	header .responsive_nav {
+		transform: translateY(100vh);
+	}
+
+	nav .nav-close-btn {
+		position: absolute;
+		top: 2rem;
+		right: 2rem;
+	}
+
+	nav a {
+		font-size: 1.5rem;
+	}
+}
+
+body {
+  background: #f5f3f3;
+  margin: 0;
+  font-family: "Jost", sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.main {
+  width: 100%;
+  height: 92.3vh;
+}
+
+.header12 {
+  display: flex;
+  align-items: center;
+  height: 100%;
+
+  width: 100%;
+
+  padding: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+
+
+}
+.ulheader li{
+  margin-left: 1.25rem; 
+  margin-right: 1.25rem;
+  font-size: 1.125rem;
+}
+.checkbtn{
+  font-size: 30px;
+  color: black;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+.logo{
+  width: 120px ;
+   
+
+ }
+.ulheader{
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  margin-left: 7px;
+}
+.boxa{
+  position: absolute;
+z-index: 10;
+display: flex;
+flex-direction: column;
+top: 3rem;
+padding: 1rem;
+right: 0;
+width: 275px;
+gap: 1rem;
+background-color: #c8c6c6;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+border-radius: 0.5rem;
+backdrop-filter: blur(4px);
+
+}
+.closebtn{
+  font-size: 30px;
+  color: black;
+  float: right;
+  line-height: 80px;
+
+  cursor: pointer;
+
+}
+#close{
+  display: none;
+}
+#check{
+  display: none;
+  
+
+}
+.premium{
+
+
+  display: flex;
+  align-items: center; 
+  margin-left: auto; 
+  cursor: pointer; 
+  gap: 0.5rem; 
+  position: relative;
+
+
+}
+@media (max-width: 642px) {
+  .header12 {
+
+    left: 0;
+    display: block;
+    text-align: center;
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    align-items: normal;
+   justify-content: space-evenly;
+    position: absolute;
+    z-index: 10;
+    background-color: rgb(255, 255, 255);
+  }
+  .logo{
+    
+      width: 120px ;
+       margin:auto ;
+        margin-top : 40px;
+   
+   
+
+  }
+  .checkbtn{
+   
+  }
+  
+  .ulheader{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 60%;
+
+   
+  }
+  .boxa{
+   
+  }
+  .premium {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    gap: 0.5rem;
+   margin-top: 50px;
+    align-self: flex-end; 
+   /* Add this line to align it to the bottom */
+}
+
+  .ulheader li{
+    padding-top: 50px;
+display: block;
+  }
+  .main{
+ 
+  }
+}
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.rhap_container {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+.rhap_play-pause-button {
+  color: #ff0000 !important;
+  transition: all 0.3s ease-in-out;
+}
+
+.rhap_play-pause-button:hover {
+  transform: scale(1.2);
+}
+
+.rhap_forward-button,
+.rhap_rewind-button,
+.rhap_skip-button,
+.rhap_volume-button,
+.rhap_repeat-button {
+  transition: all 0.3s ease-in-out;
+}
+
+.rhap_forward-button:hover,
+.rhap_rewind-button:hover,
+.rhap_skip-button:hover,
+.rhap_volume-button:hover,
+.rhap_repeat-button:hover {
+  transform: scale(1.2);
+  color: #555 !important;
+}
+
+.rhap_progress-filled {
+  background-color: #ff0000 !important;
+}
+
+.rhap_progress-indicator,
+.rhap_volume-indicator {
+  background: #b4b4b4 !important;
+}
+
+.rhap_progress-indicator:hover,
+.rhap_volume-indicator:hover {
+  transform: scale(1.2);
+}
+
+.rhap_download-progress,
+.rhap_volume-bar {
+  background-color: #ff000033 !important;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
